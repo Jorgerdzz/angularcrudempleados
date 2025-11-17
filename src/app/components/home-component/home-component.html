@@ -1,1 +1,32 @@
-<p>home-component works!</p>
+<div class="home-container">
+
+  <section class="hero">
+    <h1>Bienvenido al Portal de Empleados</h1>
+    <p>Gestiona empleados, revisa perfiles, administra oficios y más desde un panel moderno y sencillo.</p>
+    <a [routerLink]="['/login']" class="btn-primary">Comenzar</a>
+  </section>
+
+  <section class="cards-grid">
+
+    <div class="card">
+      <h3>Gestión de Empleados</h3>
+      <p>Administra tus empleados, crea nuevos registros o edita datos existentes.</p>
+      <a [routerLink]="['/login']" class="btn-secondary">Entrar</a>
+    </div>
+
+    <div class="card">
+      <h3>Oficios</h3>
+      <p>Consulta y administra los diferentes oficios dentro de la empresa.</p>
+      <a [routerLink]="['/login']" class="btn-secondary">Explorar</a>
+    </div>
+
+    <div class="card">
+      <h3>Perfil</h3>
+      <p>Visualiza la información detallada del perfil de cada empleado.</p>
+      <a [routerLink]="['/perfil']" class="btn-secondary">Ver perfil</a>
+    </div>
+
+  </section>
+
+</div>
+

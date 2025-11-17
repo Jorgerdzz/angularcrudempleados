@@ -1,1 +1,27 @@
-<p>empleados-oficio-component works!</p>
+<div class="empleados-container">
+    <h2 class="titulo-tabla">Listado de Empleados</h2>
+
+    <div class="table-responsive tabla-glass">
+        <table class="table tabla-estilizada">
+            <thead>
+                <tr>
+                    <th scope="col">APELLIDO</th>
+                    <th scope="col">OFICIO</th>
+                    <th scope="col">DIRECTOR</th>
+                    <th scope="col">SALARIO</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @for(empleado of empleados; track empleado){
+                    <tr>
+                        <td>{{empleado.apellido}}</td>
+                        <td>{{empleado.oficio}}</td>
+                        <td>{{empleado.director}}</td>
+                        <td>{{empleado.salario}} €</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

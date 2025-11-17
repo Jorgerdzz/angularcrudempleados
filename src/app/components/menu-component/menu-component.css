@@ -1,0 +1,86 @@
+/* NAVBAR MODERNA GLASS */
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.7) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Marca */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #2a3b59 !important;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #0075ff !important;
+  transform: translateY(-2px);
+}
+
+/* Links */
+.nav-link {
+  color: #2a3b59 !important;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0075ff !important;
+  transform: translateY(-2px);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-radius: 12px;
+  border: none;
+  padding: 0.7rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #e9f1ff;
+  color: #0075ff;
+}
+
+/* Search */
+.form-control {
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 2px #0075ff50;
+  border-color: #0075ff;
+}
+
+.btn-outline-success {
+  border-radius: 25px;
+  border-color: #0075ff;
+  color: #0075ff;
+}
+
+.btn-outline-success:hover {
+  background-color: #0075ff;
+  color: #fff;
+}
+
+.navbar,
+.navbar * {
+  position: relative;
+  z-index: 1000;
+}
+
+.dropdown-menu {
+  position: absolute !important;
+  z-index: 2000 !important;
+}

@@ -1,0 +1,88 @@
+/* CONTENEDOR GENERAL */
+.empleados-container {
+  padding: 2rem;
+  animation: fadeIn 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* TÍTULO */
+.titulo-tabla {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #2a3b59;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* GLASS EFFECT CONTENEDOR */
+.tabla-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  padding: 1.5rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.12);
+}
+
+/* TABLA COMPLETA */
+.table.tabla-estilizada {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* HEADER */
+.table.tabla-estilizada thead {
+  background: linear-gradient(135deg, #0075ff, #5ab0ff);
+  color: white;
+}
+
+.table.tabla-estilizada th {
+  padding: 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* FILAS */
+.table.tabla-estilizada tbody tr {
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.table.tabla-estilizada tbody td {
+  padding: 0.9rem;
+  font-size: 0.95rem;
+  color: #2a3b59;
+}
+
+/* HOVER FILA */
+.table.tabla-estilizada tbody tr:hover {
+  background-color: #e8f1ff;
+  transform: scale(1.01);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+/* ROUNDED BORDER FIX */
+.table-responsive {
+  border-radius: 12px;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .titulo-tabla {
+    font-size: 1.6rem;
+  }
+
+  .table.tabla-estilizada th,
+  .table.tabla-estilizada td {
+    font-size: 0.85rem;
+    padding: 0.7rem;
+  }
+}

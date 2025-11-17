@@ -1,1 +1,31 @@
-<p>login-component works!</p>
+<div class="login-container">
+    <div class="login-card">
+        
+        <h1 class="login-title">Iniciar Sesión</h1>
+
+        <form #loginForm="ngForm" (ngSubmit)="login()" class="login-form">
+
+            <label class="login-label">Usuario</label>
+            <input 
+                type="text" 
+                class="form-control login-input"
+                name="cajausuario" 
+                #cajausuario="ngModel" 
+                [(ngModel)]="user.userName"
+            >
+
+            <label class="login-label">Contraseña</label>
+            <input 
+                type="password" 
+                class="form-control login-input"
+                name="cajacontra" 
+                #cajacontra="ngModel" 
+                [(ngModel)]="user.password"
+            >
+
+            <button class="btn-login">Entrar</button>
+
+        </form>
+
+    </div>
+</div>
